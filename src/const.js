@@ -1,38 +1,38 @@
 export const ROUTES = [
   {
     title: 'Overview',
-    link: '/',
+    link: '/cdc-cove-styleguide',
   },
   {
     title: 'Typography',
-    link: './typography',
+    link: './cdc-cove-styleguide/typography',
   },
   {
     title: 'Themes',
-    link: './themes',
+    link: './cdc-cove-styleguide/themes',
   },
   {
     title: 'Headings',
-    link: './headings',
+    link: './cdc-cove-styleguide/headings',
   },
   {
     title: 'Navigation',
-    link: './navigation',
+    link: './cdc-cove-styleguide/navigation',
   },
   {
     title: 'Inputs',
-    link: './inputs',
+    link: './cdc-cove-styleguide/inputs',
   },
   {
     title: 'Buttons',
-    link: './buttons',
+    link: './cdc-cove-styleguide/buttons',
   },
   {
     title: 'Tooltips',
-    link: './tooltips',
+    link: './cdc-cove-styleguide/tooltips',
   },
   {
     title: 'Icons',
-    link: './icons',
+    link: './cdc-cove-styleguide/icons',
   }
 ]
