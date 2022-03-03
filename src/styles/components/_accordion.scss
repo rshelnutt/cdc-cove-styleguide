@@ -1,0 +1,63 @@
+.accordion {
+  .accordion__heading {
+    background: $lightestGray;
+  }
+
+  .accordion__item {
+    select {
+      text-transform: capitalize;
+      outline: none;
+    }
+
+    .number-narrow {
+      min-width: auto;
+      width: 75px
+    }
+  }
+
+  .accordion__panel {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1em 1.25em 2em;
+    animation: fadein 0.2s ease-in;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    h5 {
+      font-size: .8em;
+    }
+  }
+
+  .accordion__button {
+    cursor: pointer;
+    font-size: 1em;
+    padding: .3em 1em;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    &::before {
+      display: inline-block;
+      content: '';
+      height: 7px;
+      width: 7px;
+      margin-right: 1em;
+      border-bottom: 2px solid currentColor;
+      border-right: 2px solid currentColor;
+      right: 0;
+      position: absolute;
+      top: 50%;
+      transform: rotate(-45deg) translateY(-50%);
+      transition: .1s all;
+    }
+
+    &[aria-expanded='true']::before {
+      transform: rotate(45deg) translateY(-50%);
+      transform-origin: right;
+      margin-right: 1.3em;
+      transition: .1s all;
+    }
+  }
+}
