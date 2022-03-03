@@ -1,38 +1,40 @@
+const PATH = process.env.NODE_ENV === 'production' ? '/cdc-cove-styleguide' : ''
+
 export const ROUTES = [
   {
     title: 'Overview',
-    link: '/cdc-cove-styleguide',
+    link: PATH + '/',
   },
   {
     title: 'Typography',
-    link: './cdc-cove-styleguide/typography',
+    link: PATH + '/typography',
   },
   {
     title: 'Themes',
-    link: './cdc-cove-styleguide/themes',
+    link: PATH + '/themes',
   },
   {
     title: 'Headings',
-    link: './cdc-cove-styleguide/headings',
+    link: PATH + '/headings',
   },
   {
     title: 'Navigation',
-    link: './cdc-cove-styleguide/navigation',
+    link: PATH + '/navigation',
   },
   {
     title: 'Inputs',
-    link: './cdc-cove-styleguide/inputs',
+    link: PATH + '/inputs',
   },
   {
     title: 'Buttons',
-    link: './cdc-cove-styleguide/buttons',
+    link: PATH + '/buttons',
   },
   {
     title: 'Tooltips',
-    link: './cdc-cove-styleguide/tooltips',
+    link: PATH + '/tooltips',
   },
   {
     title: 'Icons',
-    link: './cdc-cove-styleguide/icons',
+    link: PATH + '/icons',
   }
 ]

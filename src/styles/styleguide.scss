@@ -68,12 +68,13 @@ html, body,
   position: relative;
   text-align: right;
 
-  span {
+  a {
     padding: 0.125rem 0.25rem 0.25rem;
     border: 1px solid #36b936;
     color: #36b936;
     font-weight: bold;
     font-size: 0.7rem;
+    text-decoration: none;
     line-height: 1em;
     border-radius: 3px;
   }
@@ -98,7 +99,6 @@ html, body,
 
   h1 {
     padding-bottom: 1rem;
-    margin-bottom: 3rem;
     font-size: 3rem;
     color: #3a569b;
     border-bottom: 1px solid #ededed;
@@ -138,7 +138,7 @@ html, body,
 }
 
 .sg-sidenav--item {
-  border-bottom: 1px solid #efefef;
+  border-bottom: 1px solid #f1f1f1;
 
   @at-root .sg-sidenav #{&}:last-of-type {
     border-bottom: none;
@@ -146,6 +146,7 @@ html, body,
 }
 
 .sg-sidenav--link {
+  position: relative;
   display: block;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -153,7 +154,34 @@ html, body,
   text-decoration: none;
   color: #898989;
 
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 0;
+    height: 1px;
+    background-color: #cdcdcd;
+    transition: width 600ms cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: none;
+  }
+
   &.active {
     color: #3a569b;
+
+    &::after {
+      width: 100%;
+      background-color: #3a569b;
+    }
+  }
+
+  &:not(.active) {
+    &::after {
+      background-color: #cdcdcd;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
   }
 }

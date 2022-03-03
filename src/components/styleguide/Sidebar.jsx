@@ -7,7 +7,7 @@ const Sidebar = ({version}) => {
   return (
     <div className="sg-sidebar">
       <div className="sg-sidebar-version">
-        <span>{version}</span>
+        <a href="https://github.com/CDCgov/cdc-open-viz" target="cdcCove">{version}</a>
       </div>
       <div className="sg-sidebar-logo">
         <CoveLogo/>

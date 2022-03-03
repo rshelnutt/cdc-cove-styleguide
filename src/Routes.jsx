@@ -13,19 +13,20 @@ import Icons from './pages/Icons'
 
 const PageRoutes = () => {
   const location = useLocation()
+  const PATH = process.env.NODE_ENV === 'production' ? '/cdc-cove-styleguide' : ''
 
   return (
     <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
-          <Route path="/cdc-cove-styleguide" element={<Overview/>}/>
-          <Route path="/cdc-cove-styleguide/typography" element={<Typography/>}/>
-          <Route path="/cdc-cove-styleguide/themes" element={<Themes/>}/>
-          <Route path="/cdc-cove-styleguide/headings" element={<Headings/>}/>
-          <Route path="/cdc-cove-styleguide/navigation" element={<Navigation/>}/>
-          <Route path="/cdc-cove-styleguide/inputs" element={<Inputs/>}/>
-          <Route path="/cdc-cove-styleguide/buttons" element={<Buttons/>}/>
-          <Route path="/cdc-cove-styleguide/tooltips" element={<Tooltips/>}/>
-          <Route path="/cdc-cove-styleguide/icons" element={<Icons/>}/>
+          <Route path={`${PATH}/`} element={<Overview/>}/>
+          <Route path={`${PATH}/typography`} element={<Typography/>}/>
+          <Route path={`${PATH}/themes`} element={<Themes/>}/>
+          <Route path={`${PATH}/headings`} element={<Headings/>}/>
+          <Route path={`${PATH}/navigation`} element={<Navigation/>}/>
+          <Route path={`${PATH}/inputs`} element={<Inputs/>}/>
+          <Route path={`${PATH}/buttons`} element={<Buttons/>}/>
+          <Route path={`${PATH}/tooltips`} element={<Tooltips/>}/>
+          <Route path={`${PATH}/icons`} element={<Icons/>}/>
         </Routes>
     </AnimatePresence>
   )
