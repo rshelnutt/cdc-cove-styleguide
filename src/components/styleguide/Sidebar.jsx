@@ -4,8 +4,9 @@ import { ROOT_PATH, ROUTES } from '../../const'
 import { ReactComponent as CoveLogo } from '../../images/cove-logo.svg'
 
 const Sidebar = ({version}) => {
+  let navigate = useNavigate();
+
   const startStorybook = () => {
-    let navigate = useNavigate();
     console.log('Trying to navigate to ' + ROOT_PATH + '/sb')
     navigate(ROOT_PATH + '/sb')
   }
