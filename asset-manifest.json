@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/cdc-cove-styleguide/static/css/main.68527747.css",
-    "main.js": "/cdc-cove-styleguide/static/js/main.1adbb7e3.js",
+    "main.css": "/cdc-cove-styleguide/static/css/main.8a2b3644.css",
+    "main.js": "/cdc-cove-styleguide/static/js/main.07caf3ca.js",
     "static/media/cove-logo.svg": "/cdc-cove-styleguide/static/media/cove-logo.6144ca4fbdeb32830e95d9122176603b.svg",
     "index.html": "/cdc-cove-styleguide/index.html",
-    "main.68527747.css.map": "/cdc-cove-styleguide/static/css/main.68527747.css.map",
-    "main.1adbb7e3.js.map": "/cdc-cove-styleguide/static/js/main.1adbb7e3.js.map"
+    "main.8a2b3644.css.map": "/cdc-cove-styleguide/static/css/main.8a2b3644.css.map",
+    "main.07caf3ca.js.map": "/cdc-cove-styleguide/static/js/main.07caf3ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.68527747.css",
-    "static/js/main.1adbb7e3.js"
+    "static/css/main.8a2b3644.css",
+    "static/js/main.07caf3ca.js"
   ]
 }
