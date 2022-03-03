@@ -17,15 +17,16 @@ const PageRoutes = () => {
   return (
     <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Overview/>}/>
-          <Route path="typography" element={<Typography/>}/>
-          <Route path="themes" element={<Themes/>}/>
-          <Route path="headings" element={<Headings/>}/>
-          <Route path="navigation" element={<Navigation/>}/>
-          <Route path="inputs" element={<Inputs/>}/>
-          <Route path="buttons" element={<Buttons/>}/>
-          <Route path="tooltips" element={<Tooltips/>}/>
-          <Route path="icons" element={<Icons/>}/>
+          <Route path="/cdc-cove-styleguide" element={<Overview/>}>
+            <Route path="typography" element={<Typography/>}/>
+            <Route path="themes" element={<Themes/>}/>
+            <Route path="headings" element={<Headings/>}/>
+            <Route path="navigation" element={<Navigation/>}/>
+            <Route path="inputs" element={<Inputs/>}/>
+            <Route path="buttons" element={<Buttons/>}/>
+            <Route path="tooltips" element={<Tooltips/>}/>
+            <Route path="icons" element={<Icons/>}/>
+          </Route>
         </Routes>
     </AnimatePresence>
   )
