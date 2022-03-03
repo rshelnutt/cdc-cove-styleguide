@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/cdc-cove-styleguide/static/css/main.68527747.css",
+    "main.js": "/cdc-cove-styleguide/static/js/main.be67bf82.js",
+    "static/media/cove-logo.svg": "/cdc-cove-styleguide/static/media/cove-logo.6144ca4fbdeb32830e95d9122176603b.svg",
+    "index.html": "/cdc-cove-styleguide/index.html",
+    "main.68527747.css.map": "/cdc-cove-styleguide/static/css/main.68527747.css.map",
+    "main.be67bf82.js.map": "/cdc-cove-styleguide/static/js/main.be67bf82.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68527747.css",
+    "static/js/main.be67bf82.js"
+  ]
+}
