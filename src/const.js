@@ -1,4 +1,4 @@
-const ROOT_PATH = process.env.NODE_ENV === 'production' ? '/cdc-cove-styleguide' : ''
+export const ROOT_PATH = process.env.NODE_ENV === 'production' ? '/cdc-cove-styleguide' : ''
 
 export const ROUTES = [
   {
