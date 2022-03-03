@@ -20,7 +20,7 @@ const Sidebar = ({version}) => {
               <NavLink className={({ isActive }) => "sg-sidenav--link" + (isActive ? " active" : "")} to={route.link}>{route.title}</NavLink>
             </li>
           ))}
-          <li className={"sg-sidenav--item"} key={index}>
+          <li className={"sg-sidenav--item"}>
             <a href={`${window.location.href}${ROOT_PATH}/sb`} className="sg-sidenav--btn">View Docs</a>
           </li>
         </ul>
