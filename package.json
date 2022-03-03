@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "rm -rf build/sb && npm run build && build-storybook -o build/sb",
+    "predeploy": "npm run build && build-storybook -o build/sb",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
