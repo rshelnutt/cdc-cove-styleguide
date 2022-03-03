@@ -1,10 +1,15 @@
 import { NavLink, useNavigate } from 'react-router-dom'
-import { ROUTES } from '../../const'
+import { ROOT_PATH, ROUTES } from '../../const'
 
 import { ReactComponent as CoveLogo } from '../../images/cove-logo.svg'
 
 const Sidebar = ({version}) => {
-  let navigate = useNavigate();
+  const startStorybook = () => {
+    let navigate = useNavigate();
+    console.log('Trying to navigate to ' + ROOT_PATH + '/sb')
+    navigate(ROOT_PATH + '/sb')
+  }
+
   return (
     <div className="sg-sidebar">
       <div className="sg-sidebar-version">
@@ -20,7 +25,7 @@ const Sidebar = ({version}) => {
               <NavLink className={({ isActive }) => "sg-sidenav--link" + (isActive ? " active" : "")} to={route.link}>{route.title}</NavLink>
             </li>
           ))}
-          <button onClick={navigate('sb')}>View Storybook</button>
+          <button onClick={()=>startStorybook()}>View Storybook</button>
         </ul>
       </nav>
     </div>
