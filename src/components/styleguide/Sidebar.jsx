@@ -21,7 +21,7 @@ const Sidebar = ({version}) => {
             </li>
           ))}
           <li className={"sg-sidenav--item"}>
-            <a href={`${location.protocol + '//' + location.host}${ROOT_PATH}/sb`} className="sg-sidenav--btn">View Docs</a>
+            <a href={`${window.location.protocol + '//' + window.location.host}${ROOT_PATH}/sb`} className="sg-sidenav--btn">View Docs</a>
           </li>
         </ul>
       </nav>
