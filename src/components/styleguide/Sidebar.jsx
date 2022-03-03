@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { ROUTES } from '../../const'
 
 import { ReactComponent as CoveLogo } from '../../images/cove-logo.svg'
