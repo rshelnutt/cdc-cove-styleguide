@@ -20,9 +20,6 @@ const Sidebar = ({version}) => {
               <NavLink className={({ isActive }) => "sg-sidenav--link" + (isActive ? " active" : "")} to={route.link}>{route.title}</NavLink>
             </li>
           ))}
-          <li className={"sg-sidenav--item"}>
-            <a href={`${window.location.protocol + '//' + window.location.host}${ROOT_PATH}/sb`} className="sg-sidenav--btn">View Docs</a>
-          </li>
         </ul>
       </nav>
     </div>
